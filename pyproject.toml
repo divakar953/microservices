@@ -1,0 +1,24 @@
+[project]
+name = "microservices"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Divakar Reddy Vanga", email = "divakarvanga@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.143.1",
+    "redis>=8.1.0",
+    "pydantic-settings>=2.0.0",
+    "redis-cli>=1.0.1",
+    "redis-om>=1.2.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+microservices = "microservices:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
